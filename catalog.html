@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/reset.min.css">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.min.css">
+<script src="https://api-maps.yandex.ru/2.1/?apikey=672f2446-1823-4c12-a1f0-d00366d56510&lang=ru_RU" type="text/javascript"></script>
+
+  <title>Каталог</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header header--line">
+  <div class="header__top header-top">
+    <div class="container">
+      <a class="logo header__logo" href="index.html" aria-label="Логотип">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="header__list">
+        <li class="header__list-links">
+          <a class="header__list-link" href="mailot:okoprom@gmail.com">okoprom@gmail.com</a>
+          <a class="header__list-link" href="tel:+78007073101">+7 (800) 707-31-01</a>
+        </li>
+        <li class="header__list-links">
+          <a class="header__list-link " data-adaptive href="delivery.html">Доставка и оплата</a>
+          <a class="header__list-link " data-adaptive href="guarantee.html">Гарантии</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__bottom header-bottom">
+    <div class="container">
+      <div class="header-bottom__inner">
+        <div class="header-bottom__top">
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="text-medium btn nav__link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a class="text-medium btn nav__link" href="#">Наше производство</a>
+              </li>
+              <li class="nav__item">
+                <a class="text-medium btn nav__link" href="about.html">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a class="text-medium btn nav__link" href="contacts.html">Контакты</a>
+              </li>
+              <button class="btn-reset nav__btn">
+                <svg class="icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </ul>
+          </nav>
+          <button class="btn-reset header__search-btn">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <div class="header__cart header-cart">
+            <button class="btn-reset header-cart__btn">
+              <svg class="icon">
+                <use xlink:href="assets/images/sprite/sprite.svg#cart"></use>
+              </svg>
+            </button>
+          </div>
+          <a class="text-medium btn btn-primery header__write-link" href="#">Запросить консультацию</a>
+          <button	class="btn-reset burger">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#burger"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__search search">
+          <div class="search__blok">
+            <div class="search__field search-field">
+              <input class="search-field__input" type="text" placeholder="Поиск..."></input>
+              <button class="btn-reset search-field__btn" type="button">
+                <svg class="icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-reset search-field__btn-close" type="button">
+              <svg class="icon">
+                <use xlink:href="assets/images/sprite/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</header>
+      <main class="main">
+        <section class="section adventages">
+  <div class="container">
+    <ul class="adventages__items">
+      <li class="adventages__item">
+        <div class="adventage">
+          <div class="adventage__icon">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#service"></use>
+            </svg>
+          </div>
+          <div class="adventage__content">
+            <h4 class="text-large adventage__title">Всегда на связи</h4>
+            <div class="text-medium adventage__text">
+              Консультируем при покупке и в дальнейшем при эксплуатации нашего оборудования
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="adventages__item">
+        <div class="adventage">
+          <div class="adventage__icon">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#delivery"></use>
+            </svg>
+          </div>
+          <div class="adventage__content">
+            <h4 class="text-large adventage__title">Доставка по всей России</h4>
+            <div class="text-medium adventage__text">
+              Отправим товар транспортной компанией или почтовым отправлением (оплата при получении)
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="adventages__item">
+        <div class="adventage">
+          <div class="adventage__icon">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#guarantee"></use>
+            </svg>
+          </div>
+          <div class="adventage__content">
+            <h4 class="text-large adventage__title">Гарантия на всё</h4>
+            <div class="text-medium adventage__text">
+              Предоставляется гарантия сроком до 1 года со дня приобретения товара
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+        <section class="catalog">
+  <div class="container">
+    <div class="catalog__head">
+      <h2 class="title-h1 catalog__title">Вся продукция</h2>
+      <span class="text-medium catalog__number">126 товара</span>
+    </div>
+    <div class="catalog__content content-catalog">
+      <div class="content-catalog__aside">
+        <div class="catalog-filter">
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item text-medium ">
+              <span>Вся продукция</span>
+              <svg class="icon">
+                <use xlink:href="assets/images/sprite/sprite.svg#all"></use>
+              </svg>
+            </li>
+            <li class="catalog-filter__item text-medium">
+              <span>Скидки</span>
+              <svg class="icon">
+                <use xlink:href="assets/images/sprite/sprite.svg#sale"></use>
+              </svg>
+            </li>
+            <li class="catalog-filter__item text-medium" data-filter="stank">Станки для разделки кабеля</li>
+            <li class="catalog-filter__item text-medium">Сепараторы / Дробилки для кабеля</li>
+            <li class="catalog-filter__item text-medium">Запасные части</li>
+            <li class="catalog-filter__item text-medium">Станки для разделки теплообменника</li>
+            <li class="catalog-filter__item text-medium">Разделка радиаторов</li>
+            <li class="catalog-filter__item text-medium">Другое</li>
+          </ul>
+        </div>
+        <button class="btn-reset catalog-filter-btn">
+          <span>Фильтр</span>
+          <svg class="icon">
+            <use xlink:href="assets/images/sprite/sprite.svg#filter"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="content-catalog__main">
+        <div class="content-catalog__filter-tags filter-tags">
+          <ul class="filter-tags__list">
+            <li class="filter-tags__item">
+              <div class="text-medium  filter-tag">Автоматические</div>
+            </li>
+            <li class="filter-tags__item">
+              <div class="text-medium filter-tag">Подходящие для брони</div>
+            </li>
+            <li class="filter-tags__item ">
+              <div class="text-medium filter-tag">С прессовым валом</div>
+            </li>
+            <li class="filter-tags__item filter-tags__item--dropdown">
+              <div class="filter-tag filter-tag--dropdown">
+                <span>Цена</span>
+                <svg class="icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <div class="filter-tags__dropdown tags-dropdown">
+                <div class=" text-medium tags-dropdown__title">Цены &#8381;</div>
+                <div class="tags-dropdown__fields">
+                  <label class="tags-dropdown__field">
+                    <input class="text-medium" type="number" name="price-from" placeholder="24000">
+                    <span class="text-medium">от</span>
+                  </label>
+                  <label class="tags-dropdown__field">
+                    <input class="text-medium" type="number" name="price-before" placeholder="100 000 000">
+                    <span class="text-medium">до</span>
+                  </label>
+                </div>
+                <button class="btn btn-primery text-medium tags-dropdown__btn" disabled>Применить</button>
+              </div>
+            </li>
+            <li class="filter-tags__item filter-tags__item--dropdown">
+              <div class="filter-tag filter-tag--dropdown">
+                <span>Диапозон обработки</span>
+                <svg class="icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+              <div class="filter-tags__dropdown tags-dropdown">
+                <div class=" text-medium tags-dropdown__title">Диапозон обработки</div>
+                <div class="tags-dropdown__radios">
+                  <label class="tags-dropdown__radio">
+                    <input type="radio"id="range-proces" name="radio" value="51">
+                    <span class="tags-dropdown__radio-fake"></span>
+                    <span class="tags-dropdown__radio-text  text-medium">Выше 50мм</span>
+                  </label>
+                  <label class="tags-dropdown__radio">
+                    <input type="radio" id="range-proces" name="radio" value="49">
+                    <span class="tags-dropdown__radio-fake"></span>
+                    <span class="tags-dropdown__radio-text text-medium">До 50мм</span>
+                  </label>
+                </div>
+                <button class="btn btn-primery text-medium tags-dropdown__btn" disabled>Применить</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+       <ul class="content-catalog__list">
+         <li class="content-catalog__item">
+           <article class="product-card">
+             <a class="product-card__img" href="product-page.html">
+               <img src="assets/images/products/01.jpg" alt="Товар">
+               <div class="product-card__categories">
+                 <span class="product-card__category product-card__category--blue">Броня</span>
+                 <span class="product-card__category product-card__category--green">Пресс</span>
+               </div>
+             </a>
+             <div class="product-card__content">
+               <a class="text-medium product-card__title" href="product-page.html">S2-3 Автоматический мини</a>
+               <table class="product-card-params">
+                <tbody>
+                  <tr>
+                    <th class="product-card-params__cell">Вес</th>
+                    <td class="product-card-params__cell">13кг</td>
+                  </tr>
+                  <tr>
+                    <th class="product-card-params__cell">Двигатель</th>
+                    <td class="product-card-params__cell">180 Вт</td>
+                  </tr>
+                  <tr>
+                    <th class="product-card-params__cell">Диам.обраб.</th>
+                    <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="product-card__price">
+                <span class="text-large product-card__price-now">34990</span>
+                <span class="product-card__price-last">24450</span>
+              </div>
+              <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+             </div>
+           </article>
+         </li>
+         <li class="content-catalog__item">
+          <article class="product-card">
+            <a class="product-card__img" href="product-page.html">
+              <img src="assets/images/products/02.jpg" alt="Товар">
+              <div class="product-card__categories">
+                <span class="product-card__category product-card__category--red">-10%</span>
+                <span class="product-card__category product-card__category--blue">Броня</span>
+                <span class="product-card__category product-card__category--green">Пресс</span>
+              </div>
+            </a>
+            <div class="product-card__content">
+              <a class="text-medium product-card__title" href="product-page.html">SG-006-1 Станок для разделки кабеля (Автоматический)</a>
+              <table class="product-card-params">
+               <tbody>
+                 <tr>
+                   <th class="product-card-params__cell">Вес</th>
+                   <td class="product-card-params__cell">13кг</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Двигатель</th>
+                   <td class="product-card-params__cell">180 Вт</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Диам.обраб.</th>
+                   <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="product-card__price">
+               <span class="text-large product-card__price-now">34990</span>
+               <span class="product-card__price-last">24450</span>
+             </div>
+             <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+            </div>
+          </article>
+        </li>
+        <li class="content-catalog__item">
+          <article class="product-card">
+            <a class="product-card__img" href="#">
+              <img src="assets/images/products/01.jpg" alt="Товар">
+            </a>
+            <div class="product-card__content">
+              <a class="text-medium product-card__title" href="#">SG-006-1 Станок для разделки кабеля (Автоматический)</a>
+              <table class="product-card-params">
+               <tbody>
+                 <tr>
+                   <th class="product-card-params__cell">Вес</th>
+                   <td class="product-card-params__cell">13кг</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Двигатель</th>
+                   <td class="product-card-params__cell">180 Вт</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Диам.обраб.</th>
+                   <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="product-card__price">
+               <span class="text-large product-card__price-now">34990</span>
+               <span class="product-card__price-last">24450</span>
+             </div>
+             <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+            </div>
+          </article>
+        </li>
+        <li class="content-catalog__item">
+          <article class="product-card">
+            <a class="product-card__img" href="#">
+              <img src="assets/images/products/02.jpg" alt="Товар">
+              <div class="product-card__categories">
+                <span class="product-card__category product-card__category--red">-10%</span>
+                <span class="product-card__category product-card__category--blue">Броня</span>
+                <span class="product-card__category product-card__category--green">Пресс</span>
+              </div>
+            </a>
+            <div class="product-card__content">
+              <a class="text-medium product-card__title" href="#">SG-006-1 Станок для разделки кабеля (Автоматический)</a>
+              <table class="product-card-params">
+               <tbody>
+                 <tr>
+                   <th class="product-card-params__cell">Вес</th>
+                   <td class="product-card-params__cell">13кг</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Двигатель</th>
+                   <td class="product-card-params__cell">180 Вт</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Диам.обраб.</th>
+                   <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="product-card__price">
+               <span class="text-large product-card__price-now">34990</span>
+               <span class="product-card__price-last">24450</span>
+             </div>
+             <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+            </div>
+          </article>
+        </li>
+        <li class="content-catalog__item">
+          <article class="product-card">
+            <a class="product-card__img" href="#">
+              <img src="assets/images/products/01.jpg" alt="Товар">
+            </a>
+            <div class="product-card__content">
+              <a class="text-medium product-card__title" href="#">SG-006-1 Станок для разделки кабеля (Автоматический)</a>
+              <table class="product-card-params">
+               <tbody>
+                 <tr>
+                   <th class="product-card-params__cell">Вес</th>
+                   <td class="product-card-params__cell">13кг</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Двигатель</th>
+                   <td class="product-card-params__cell">180 Вт</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Диам.обраб.</th>
+                   <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="product-card__price">
+               <span class="text-large product-card__price-now">34990</span>
+               <span class="product-card__price-last">24450</span>
+             </div>
+             <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+            </div>
+          </article>
+        </li>
+        <li class="content-catalog__item">
+          <article class="product-card">
+            <a class="product-card__img" href="#">
+              <img src="assets/images/products/01.jpg" alt="Товар">
+              <div class="product-card__categories">
+                <span class="product-card__category product-card__category--blue">Броня</span>
+                <span class="product-card__category product-card__category--green">Пресс</span>
+              </div>
+            </a>
+            <div class="product-card__content">
+              <a class="text-medium product-card__title" href="#">S2-3 Автоматический мини</a>
+              <table class="product-card-params">
+               <tbody>
+                 <tr>
+                   <th class="product-card-params__cell">Вес</th>
+                   <td class="product-card-params__cell">13кг</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Двигатель</th>
+                   <td class="product-card-params__cell">180 Вт</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Диам.обраб.</th>
+                   <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="product-card__price">
+               <span class="text-large product-card__price-now">34990</span>
+               <span class="product-card__price-last">24450</span>
+             </div>
+             <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+            </div>
+          </article>
+        </li>
+        <li class="content-catalog__item">
+          <article class="product-card">
+            <a class="product-card__img" href="#">
+              <img src="assets/images/products/01.jpg" alt="Товар">
+              <div class="product-card__categories">
+                <span class="product-card__category product-card__category--blue">Броня</span>
+                <span class="product-card__category product-card__category--green">Пресс</span>
+              </div>
+            </a>
+            <div class="product-card__content">
+              <a class="text-medium product-card__title" href="#">S2-3 Автоматический мини</a>
+              <table class="product-card-params">
+               <tbody>
+                 <tr>
+                   <th class="product-card-params__cell">Вес</th>
+                   <td class="product-card-params__cell">13кг</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Двигатель</th>
+                   <td class="product-card-params__cell">180 Вт</td>
+                 </tr>
+                 <tr>
+                   <th class="product-card-params__cell">Диам.обраб.</th>
+                   <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="product-card__price">
+               <span class="text-large product-card__price-now">34990</span>
+               <span class="product-card__price-last">24450</span>
+             </div>
+             <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+            </div>
+          </article>
+        </li>
+        <li class="content-catalog__item">
+         <article class="product-card">
+           <a class="product-card__img" href="#">
+             <img src="assets/images/products/02.jpg" alt="Товар">
+             <div class="product-card__categories">
+               <span class="product-card__category product-card__category--red">-10%</span>
+               <span class="product-card__category product-card__category--blue">Броня</span>
+               <span class="product-card__category product-card__category--green">Пресс</span>
+             </div>
+           </a>
+           <div class="product-card__content">
+             <a class="text-medium product-card__title" href="#">SG-006-1 Станок для разделки кабеля (Автоматический)</a>
+             <table class="product-card-params">
+              <tbody>
+                <tr>
+                  <th class="product-card-params__cell">Вес</th>
+                  <td class="product-card-params__cell">13кг</td>
+                </tr>
+                <tr>
+                  <th class="product-card-params__cell">Двигатель</th>
+                  <td class="product-card-params__cell">180 Вт</td>
+                </tr>
+                <tr>
+                  <th class="product-card-params__cell">Диам.обраб.</th>
+                  <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="product-card__price">
+              <span class="text-large product-card__price-now">34990</span>
+              <span class="product-card__price-last">24450</span>
+            </div>
+            <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+           </div>
+         </article>
+       </li>
+       <li class="content-catalog__item">
+         <article class="product-card">
+           <a class="product-card__img" href="#">
+             <img src="assets/images/products/01.jpg" alt="Товар">
+           </a>
+           <div class="product-card__content">
+             <a class="text-medium product-card__title" href="#">SG-006-1 Станок для разделки кабеля (Автоматический)</a>
+             <table class="product-card-params">
+              <tbody>
+                <tr>
+                  <th class="product-card-params__cell">Вес</th>
+                  <td class="product-card-params__cell">13кг</td>
+                </tr>
+                <tr>
+                  <th class="product-card-params__cell">Двигатель</th>
+                  <td class="product-card-params__cell">180 Вт</td>
+                </tr>
+                <tr>
+                  <th class="product-card-params__cell">Диам.обраб.</th>
+                  <td class="product-card-params__cell">от 1,5 до 25мм</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="product-card__price">
+              <span class="text-large product-card__price-now">34990</span>
+              <span class="product-card__price-last">24450</span>
+            </div>
+            <a class="btn btn-primery product-card__btn" href="#">Купить</a>
+           </div>
+         </article>
+       </li>
+       </ul>
+       <button class="btn-reset btn text-medium content-catalog__load">Показать ешё</button>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="section feedback">
+  <div class="container">
+    <div class="feedback__body">
+      <div class="section__head feedback__content">
+        <h2 class="title-h1 section__title  feedback__title">Будем рады<br> ответить на все интересующие вопросы</h2>
+        <div class="text-large section__subtitle">Оставьте заявку и мы вам вскоре позвоним и проконсультируем по всем интересующим вопросам</div>
+      </div>
+      <form class="feedback__form form"  action="/" method="post">
+        <div class="form__body">
+          <label class="form__field">
+            <input class="form__input form__input--name" type="text" name="username" value="">
+            <span class="form__placehold">Ваше имя</span>
+          </label>
+          <label class="form__field">
+            <input class="form__input form__input--tel" type="tel" name="phone" value="" >
+          </label>
+          <label class="form__field">
+            <input class="form__input form__input--email" type="email" name="email" value="">
+            <span class="form__placehold" >E-mail(не обязательно)</span>
+          </label>
+        </div>
+        <button class="btn btn-secondary text-medium form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+      </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__head">
+      <a class="logo header__logo" href="index.html" aria-label="Логотип">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer__body">
+      <div class="footer__info">
+        <div class="footer__addres">Тураевское шоссе дом 17, д. Островцы, Раменский район, МО, Россия</div>
+        <a class="footer__link" href="tel:+78007073101">+7 (800) 707-31-01</a>
+        <a class="footer__link" href="mailto:okoprom@gmail.com">okoprom@gmail.com</a>
+        <div class="footer__masseg masseg">
+          <a class="btn btn-primery text-medium masseg__link" href="#">Whatsapp</a>
+          <a class="btn btn-primery text-medium masseg__link" href="#">Telegram</a>
+        </div>
+        <div class="footer__social social">
+          <a class="social__link" href="#">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="icon">
+              <use xlink:href="assets/images/sprite/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <div class="social__text text-medium">
+            Подписывайтесь на нас<br> в социальных сетях
+          </div>
+        </div>
+      </div>
+      <div class="footer__nav nav-footer">
+        <h4 class="nav-footer__title text-large">Наша продукция</h4>
+        <ul class="nav-footer__list">
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Станки для разделки кабеля</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Сепараторы</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Станок для разделки теплообменников</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Разделка радиаторов</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Запасные части</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Другое</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__nav nav-footer">
+        <h4 class="nav-footer__title text-large">Наша продукция</h4>
+        <ul class="nav-footer__list">
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Станки для разделки кабеля</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Сепараторы</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Станок для разделки теплообменников</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Разделка радиаторов</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Запасные части</a>
+          </li>
+          <li class="nav-footer__list-item">
+            <a class="text-medium nav-footer__list-link" href="#">Другое</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="text-medium footer__copy">Интернет магазин "Окопром" © 2021 Все права защищены</div>
+      <a class="text-medium footer__confid" href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/validate.min.js"></script>
+<script src="assets/js/inputmask.min.js"></script>
+<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
